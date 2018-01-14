@@ -1,0 +1,51 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //[2]
+        String line1 = "We make work HUMAN.\n";
+        String line2 = "Unlock full potential. Celebrate positive moments. \n";
+        int len = line2.length();
+        String line3 = "Every day.";
+        //[A]
+        System.out.println("[2][A]");
+        System.out.println(line1 + line2 + line3);
+        //[B]
+        System.out.println("[B]");
+        System.out.println("The string length is " + len);
+        //[C]
+        System.out.println("[C]");
+        String lwrCase = (line1 + line2 + line3).toLowerCase();
+        System.out.println(lwrCase);
+        //[D]
+        System.out.println("[D]");
+        String str = "We make work HUMAN.\n" +
+                "Unlock full potential. Celebrate positive moments. \n" +
+                "Every day.\n";
+        String cap = str.replace('e', 'E');
+        System.out.println(cap);
+        //[3]
+        //[A]
+        System.out.println("[3][A]");
+        char[] globoArray = {'G', 'l', 'o', 'b', 'o', 'f', 'o', 'r', 'c', 'e'};
+        String globoString = new String(globoArray);
+        System.out.println(globoString);
+        //[B]
+        System.out.println("[B]");
+        int len2 = globoString.length();
+        System.out.println("The string length is " + len2);
+        //[C]
+        System.out.println("[C]");
+
+        for (int i=0; i< globoArray.length; i++) {
+            if('b' == globoArray[i]){
+                globoArray[i] = '$';
+
+            }
+        }
+        System.out.println(globoArray);
+
+            }
+        }
+
